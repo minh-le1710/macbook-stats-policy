@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & FAQ — MacBook Stats Overlay</title>
+  <meta name="description" content="Official Support and Frequently Asked Questions for MacBook Stats Overlay. Learn shortcuts (⌘L, ⌘O), theme configuration, and Apple Silicon telemetry.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="ambient-bg"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="assets/icon.png" alt="MacBook Stats Overlay Icon" class="brand-icon">
+        <span>MacBook Stats Overlay</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms & EULA</a></li>
+          <li><a href="support.html" class="nav-link active">Support & FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="hero" style="padding-bottom: 24px;">
+      <div class="hero-pill">
+        <span>Help & Documentation</span>
+      </div>
+      <h1 class="hero-title">Support & FAQ</h1>
+      <p class="hero-subtitle">
+        Everything you need to know about configuring, customizing, and getting the most out of MacBook Stats Overlay.
+      </p>
+    </div>
+
+    <!-- Quick Shortcuts Card -->
+    <section class="card" style="margin-bottom: 32px;">
+      <h3 class="card-title">⌨️ Essential Keyboard Shortcuts</h3>
+      <div class="grid-3" style="margin-top: 16px;">
+        <div style="background: var(--bg-secondary); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 4px;">⌘ + L</div>
+          <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 2px;">Lock / Unlock HUD</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">Toggle between click-through gaming mode and dragging mode.</div>
+        </div>
+        <div style="background: var(--bg-secondary); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--accent-cyan); margin-bottom: 4px;">⌘ + O</div>
+          <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 2px;">Toggle Visibility</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">Show or hide the floating HUD overlay instantly.</div>
+        </div>
+        <div style="background: var(--bg-secondary); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--accent-purple); margin-bottom: 4px;">⌘ + ,</div>
+          <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 2px;">Open Settings</div>
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">Configure HUD styles, themes, menu bar modes, and polling rates.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed FAQ Section -->
+    <section class="prose-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <!-- Question 1 -->
+      <details class="faq-item" open>
+        <summary class="faq-question">
+          <span>How do I move and reposition the HUD overlay?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            By default, the HUD overlay is <strong>locked</strong> so that your mouse clicks pass completely through to whatever game, code editor, or app is running underneath.
+          </p>
+          <ol style="margin-left: 20px; margin-top: 8px;">
+            <li>Press <span class="code-inline">⌘L</span> or click the Menu Bar icon and select <strong>"Unlock Position (⌘L)"</strong>.</li>
+            <li>A subtle dashed border and drag handle will appear around the HUD.</li>
+            <li>Click and drag the overlay to your preferred position anywhere on your screen (or secondary monitors).</li>
+            <li>Press <span class="code-inline">⌘L</span> again to lock it in place.</li>
+          </ol>
+        </div>
+      </details>
+
+      <!-- Question 2 -->
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How do I change themes and HUD styles?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Open <strong>Settings (⌘,)</strong> by clicking the speedometer icon in your macOS Menu Bar:
+          </p>
+          <ul>
+            <li><strong>Display Engines:</strong> Choose between <em>Classic RTSS</em> (compact retro gamer style), <em>Liquid Glass</em> (frosted modern macOS pill), or <em>Sparkline Graph</em> (rolling 60s activity graphs).</li>
+            <li><strong>Theme Presets:</strong> Choose from 14 curated palettes including Cyberpunk 2077, Tokyo Night, Monokai Pro, OLED Pure Black, Dracula, and Apple Silicon Minimal.</li>
+            <li><strong>Menu Bar Customization:</strong> Choose from 5 distinct Menu Bar representations: Custom Gauge, Dynamic Speedometer, Gauge + CPU %, Gauge + CPU & RAM, or Dual Activity Bars.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Question 3 -->
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>Which Mac models and macOS versions are supported?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            MacBook Stats Overlay is built as a Universal binary for:
+          </p>
+          <ul>
+            <li><strong>Apple Silicon:</strong> Full native support for M1, M1 Pro/Max/Ultra, M2 series, M3 series, and M4 series chips (including distinct P-Core vs E-Core telemetry and unified GPU memory allocation).</li>
+            <li><strong>Intel Macs:</strong> Supports Intel Core i5/i7/i9 Macs running macOS 13.0 Ventura or higher.</li>
+            <li><strong>macOS Compatibility:</strong> macOS 13.0 (Ventura), macOS 14.0 (Sonoma), and macOS 15.0 (Sequoia) or newer.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Question 4 -->
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>Does the app cause battery drain or high CPU usage?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            <strong>No.</strong> MacBook Stats Overlay is written in pure native Swift and Metal with zero Electron or webview overhead.
+          </p>
+          <ul>
+            <li>Typical CPU usage is under <strong>0.8%</strong> on a single efficiency core.</li>
+            <li>Memory footprint is lightweight (~18 MB to 35 MB RAM).</li>
+            <li>Zero GPU rendering load when unchanged, drawing at 60 FPS only during active HUD animations.</li>
+            <li>Battery telemetry reads real-time instantaneous discharge wattage (<span class="code-inline">InstantAmperage</span> × <span class="code-inline">Voltage</span>) directly from the AppleSmartBattery controller so you can monitor your Mac's battery health accurately.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Question 5 -->
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>How does the Lifetime Pro unlock work?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            MacBook Stats Overlay is free to use forever for essential hardware monitoring. If you'd like to support development and unlock advanced features:
+          </p>
+          <ul>
+            <li>You can purchase the <strong>Lifetime Pro Unlock ($2.99 USD)</strong> directly inside the app.</li>
+            <li>It is a <strong>one-time non-consumable purchase</strong> (NOT a subscription).</li>
+            <li>You can restore your purchase anytime on any new or secondary Mac signed into your Apple ID by clicking "Restore Purchases" in Settings.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Question 6 -->
+      <details class="faq-item">
+        <summary class="faq-question">
+          <span>Why does the overlay show on top of full-screen games?</span>
+          <span class="faq-icon">▼</span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            The HUD overlay window is configured at the macOS floating screen saver / status level (<span class="code-inline">NSWindow.Level.floating</span>) with click-through enabled. 
+            For games running in borderless windowed or full-screen windowed mode, the overlay will remain cleanly visible above game visuals.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Support Contact Box -->
+    <section class="card" style="margin-top: 40px; text-align: center; border-color: var(--border-highlight);">
+      <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Need Direct Assistance?</h3>
+      <p style="color: var(--text-secondary); max-width: 560px; margin: 0 auto 24px;">
+        Have a bug to report, a feature suggestion, or an App Store review inquiry? Our developer responds directly within 24 hours.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="mailto:nhatlem428@gmail.com?subject=MacBook%20Stats%20Overlay%20Support%20Request" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email Support (nhatlem428@gmail.com)
+        </a>
+        <a href="https://github.com/minh-le1710/macbook-stats-policy/issues" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          Open GitHub Issue
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service & EULA</a></li>
+        <li><a href="support.html">Support & FAQ</a></li>
+        <li><a href="mailto:nhatlem428@gmail.com">Contact Support</a></li>
+      </ul>
+      <p>© 2026 MacBook Stats Overlay. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
